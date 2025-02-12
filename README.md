@@ -5,7 +5,7 @@
 ### Запускаем Traefik
 ```docker compose -f traefik.yml up -d reverse-proxy```
 
-### Запускаем наш домен
+### Запускаем наш сайт
 ```docker compose -f whoami.yml up -d whoami```
 
 ### Проверяем
