@@ -15,11 +15,11 @@
 
 ```docker swarm init```
 
-### Запускаем traefic
+### Публикуем triefik
 
 ```docker stack deploy -c traefik.yml proxy```
 
-### Размещаем наши сайты
+### Публикуем наши сайты
 ```docker stack deploy -c whoami.yml whoami```
 
 ### Проверяем
