@@ -1,0 +1,16 @@
+version: "3.3"
+
+services:
+  whoami:
+    image: traefik/whoami
+    deploy:
+      replicas: 1
+    networks:
+      - web 
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.whoami.rule=Host(`whoami.blabla.ru`)"
+      - "traefik.http.services.whoami.loadbalancer.server.port=80"
+networks: 
+  web:
+    external: true
