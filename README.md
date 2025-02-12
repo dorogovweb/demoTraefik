@@ -2,7 +2,7 @@
 
 ```docker network create --opt encrypted --driver overlay --attachable web```
 
-### Запускаем triefik
+### Запускаем Traefik
 ```docker compose -f traefik.yml up -d reverse-proxy```
 
 ### Запускаем наш домен
@@ -15,7 +15,7 @@
 
 ```docker swarm init```
 
-### Публикуем triefik
+### Публикуем Traefik
 
 ```docker stack deploy -c traefik.yml proxy```
 
