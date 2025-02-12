@@ -19,7 +19,7 @@
 
 ```docker stack deploy -c traefik.yml proxy```
 
-### Публикуем наши сайты
+### Публикуем наш сайт
 ```docker stack deploy -c whoami.yml whoami```
 
 ### Проверяем
